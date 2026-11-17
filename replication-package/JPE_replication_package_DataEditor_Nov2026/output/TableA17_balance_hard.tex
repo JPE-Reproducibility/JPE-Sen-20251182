@@ -1,0 +1,25 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Balance checks on test difficulty: Hard subsample} 
+ \label{tab:balance_hard} 
+ \begin{adjustbox}{max width=\textwidth} 
+\begin{tabular}{lccccccccc} 
+ \toprule
+ & & \multicolumn{3}{c}{Control} & \multicolumn{3}{c}{Treatment} & \multicolumn{2}{c}{Difference} \\
+ \cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-10} 
+ & Total Obs & Obs & Mean & s.d. & Obs & Mean & s.d. & T - C & p-value \\
+ \midrule
+Female &    9,262 &    3,776 &  0.44 &  0.50 &    5,486 &  0.45 &  0.50 & 0.010 & 0.348 \\
+SZ subscriber &    9,262 &    3,776 &  0.93 &  0.25 &    5,486 &  0.95 &  0.21 & 0.018 & 0.000 \\
+Tracked &    9,262 &    3,776 &  0.35 &  0.48 &    5,486 &  0.35 &  0.48 & -0.002 & 0.877 \\
+Early March &    9,262 &    3,776 &  0.84 &  0.36 &    5,486 &  0.83 &  0.37 & -0.011 & 0.150 \\
+Old (60-80) &    9,262 &    3,776 &  0.47 &  0.50 &    5,486 &  0.48 &  0.50 & 0.009 & 0.412 \\
+Young ($<$50) &    9,262 &    3,776 &  0.24 &  0.43 &    5,486 &  0.23 &  0.42 & -0.013 & 0.146 \\
+ \bottomrule
+\end{tabular}
+\end{adjustbox}
+ \par
+ \begin{minipage}{\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} {\it Notes.} This table shows the balance along several observable dimensions between users in the treatment and control conditions for the subsample of individuals who find the quiz hard. The first column provides the total observations across treatment and control for this subsample. {\it p-value} is obtained based on a two-sided t-test on the equality of means across treatment and control.}
+ \end{minipage}
+\end{table}

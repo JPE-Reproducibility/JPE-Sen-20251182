@@ -1,0 +1,33 @@
+ \begin{table}[H]
+ \centering
+ \caption{Post-Intervention Content Engagement: Sports articles (daily)}
+ \label{tab:content_did_panelb}
+ {\resizebox{\textwidth}{!}{%
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+\cmidrule(lr){2-6}
+\multicolumn{1}{c}{Subgroup} & Full & Low Politics & High Politics & Heavy Reader & Light Reader \\
+\midrule
+\addlinespace
+AI Treatment $\times$ Post&  -0.0275   &  -0.0769   &   0.0054   &   0.0021   &  -0.0674   \\
+                & (0.0572)   & (0.0858)   & (0.0820)   & (0.1775)   & (0.0418)   \\
+\addlinespace
+Sample mean &      1.206 &      0.971 &      1.476 &      2.791 &      0.052 \\
+ & (6.007) & (5.707) & (6.425) & (9.070) & (1.160) \\
+& & & & & \\
+Individual FE & Yes & Yes & Yes & Yes & Yes \\
+Date FE & Yes & Yes & Yes & Yes & Yes \\
+\midrule
+Obs &    155,142 &     63,778 &     84,838 &     38,532 &     38,584 \\
+Adjusted-R$^2$ &     0.4618 &     0.4817 &     0.4471 &     0.4849 &     0.1998 \\
+F statistic &      1.337 &      0.672 &      3.280 &      0.502 &      1.305 \\
+\bottomrule
+\end{tabular}
+ }}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors clustered at the individual level. Significance: * 10\%, ** 5\%, *** 1\%. The dependent variable is the number of daily clicks on sports articles by an individual reader. The time window for analysis varies from 21 days prior to the intervention to 5 days post. AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise. We control for Post, which equals 1 if the day is after the date the individual took the quiz. Column (1) contains the full sample. Columns (2) and (3) are based on low and high politics affinity individuals while in columns (4) and (5) is based on engagement, both using pre-experiment data.}
+ \end{minipage}
+ \end{table}

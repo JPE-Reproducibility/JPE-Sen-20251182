@@ -1,0 +1,28 @@
+\begin{table}[H]
+\centering
+\caption{Joint Tests of Models with Symmetric Misinformation}
+\label{tab:symmetric_tests}
+\begin{tabular}{lc}
+\toprule
+\multicolumn{2}{c}{Multiplicative: $H_0$: $\ell_i$ equal across outlets} \\
+\midrule
+$\chi^2(5)$ & 30.0 \\
+$p$-value & $<$ 0.001 \\
+\midrule
+\multicolumn{2}{c}{Additive: $H_0$: $\beta_i/(\bar{\tau}_i^C)^2$ equal across outlets} \\
+\midrule
+$\chi^2(5)$ & 41.4 \\
+$p$-value & $<$ 0.001 \\
+\midrule
+\multicolumn{2}{c}{High- vs.\ low-trust outlets (log points)} \\
+\midrule
+Difference & 7.68 \\
+$z$-statistic & 4.70 \\
+$p$-value & $<$ 0.001 \\
+\bottomrule
+\end{tabular}
+\par
+\begin{minipage}{\linewidth}
+\baselineskip9pt {\scriptsize \vspace{0.1cm} {\it Notes.} Wald tests of the five restrictions equating each outlet's statistic with that of X/Twitter. $\ell_i=\log(1+\beta_i/\bar{\tau}_i^C)$. The last panel compares the mean of $\ell_i$ for SZ and ARD/ZDF with its mean for Bild, Instagram, TikTok and X/Twitter. Covariances of the ATEs and control means are from a stacked regression of the six trust outcomes on outlet indicators and their interactions with treatment, with standard errors clustered by respondent. The $p$-values for the multiplicative and additive tests are 1.5e-05 and 7.8e-08. $N=98,074$ respondent-outlet observations from 17,294 respondents.}
+\end{minipage}
+\end{table}

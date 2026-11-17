@@ -1,0 +1,31 @@
+ \begin{table}[H]
+ \centering
+ \caption{Post-Intervention Subscription Retention: Heterogeneity by Politics Affinity and Reading Intensity}
+ \label{tab:subscription_hetero_new}
+ {\resizebox{\textwidth}{!}{%
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+\multicolumn{1}{l}{Dep. variable} & \multicolumn{4}{c}{Subscription status (150 days)} \\
+\cmidrule(lr){2-5}
+\multicolumn{1}{c}{Subgroup} & Low Politics & High Politics & Heavy Reader & Light Reader \\
+\midrule
+\addlinespace
+AI Treatment    &   0.0174** &   0.0086   &   0.0145*  &   0.0044   \\
+                & (0.0075)   & (0.0063)   & (0.0085)   & (0.0111)   \\
+\addlinespace
+Sample mean &      0.964 &      0.967 &      0.972 &      0.952 \\
+ & (0.186) & (0.178) & (0.164) & (0.213) \\
+\midrule
+Obs &      2,433 &      3,234 &      1,477 &      1,472 \\
+R-squared &     0.0022 &     0.0006 &     0.0019 &     0.0001 \\
+F statistic &      5.409 &      1.877 &      2.882 &      0.157 \\
+\bottomrule
+\end{tabular}
+ }}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Heteroskedasticity-robust standard errors. Significance: * 10\%, ** 5\%, *** 1\%. Dependent variable: subscription retention at 150 days post-intervention. Cols (1)--(2): politics affinity split. Cols (3)--(4): pre-experiment visit intensity (heavy: $>$145; light: $<$20 visits in the 3 pre-experiment weeks).}
+ \end{minipage}
+ \end{table}

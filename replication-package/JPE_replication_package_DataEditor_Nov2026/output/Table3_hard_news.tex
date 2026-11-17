@@ -1,0 +1,33 @@
+ \begin{table}[H]
+ \centering
+ \caption{Post-Intervention Content Engagement: Hard News}
+ \label{tab:content_did}
+ {\resizebox{\textwidth}{!}{%
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\toprule
+ & (1) & (2) & (3) & (4) & (5) \\
+\cmidrule(lr){2-6}
+\multicolumn{1}{c}{Subgroup} & Full & Low Politics & High Politics & Heavy Reader & Light Reader \\
+\midrule
+\addlinespace
+AI Treatment $\times$ Post&   0.3140   &   0.6442** &   0.1055   &   1.0049*  &  -0.0499   \\
+                & (0.1981)   & (0.2729)   & (0.2982)   & (0.5879)   & (0.1309)   \\
+\addlinespace
+Sample mean &     10.251 &      8.116 &     12.638 &     22.785 &      0.738 \\
+ & (20.286) & (18.400) & (21.929) & (29.296) & (4.075) \\
+& & & & & \\
+Individual FE & Yes & Yes & Yes & Yes & Yes \\
+Date FE & Yes & Yes & Yes & Yes & Yes \\
+\midrule
+Obs &    155,142 &     63,778 &     84,838 &     38,532 &     38,584 \\
+Adjusted-R$^2$ &     0.5685 &     0.5791 &     0.5503 &     0.5473 &     0.1899 \\
+F statistic &      3.594 &      2.786 &      4.630 &      2.605 &      0.450 \\
+\bottomrule
+\end{tabular}
+ }}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors clustered at the individual level. Significance: * 10\%, ** 5\%, *** 1\%. Window: 21 days pre- to 5 days post-intervention (excluding day 0). Col (1): full sample. Cols (2)--(3): politics affinity split. Cols (4)--(5): reading intensity split (heavy: $>$145 visits; light: $<$20 visits in the 3 pre-experiment weeks). Dep.\ var.: sum of daily politics and economics article clicks.}
+ \end{minipage}
+ \end{table}

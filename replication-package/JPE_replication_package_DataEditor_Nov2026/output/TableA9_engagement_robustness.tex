@@ -1,0 +1,40 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Post-Intervention Engagement: Robustness} 
+ \label{tab:results_visits_robust} 
+ \begin{adjustbox}{max width=\textwidth} 
+\begin{tabular}{lccccccccc} 
+ \toprule
+ \midrule
+& (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) & (9)  \\
+ Dep. variable & \multicolumn{3}{c}{Number of daily visits} & \multicolumn{2}{c}{Time Spent (Seconds)} & \multicolumn{2}{c}{Number of daily visits} & \multicolumn{2}{c}{Other Survey Engagement}  \\ 
+ \cmidrule(lr){2-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8} \cmidrule(lr){9-10}
+Timespan & (-21;5) & (-21;5) & (-21;5) & (-21;5) & (-21;5) & (-14;5) & (-21;5) & (-21;5) & (-21;5) \\
+ \cmidrule(lr){2-10}
+Method & OLS & OLS & Poisson & OLS & OLS & OLS & OLS & OLS & LPM \\
+ \cmidrule(lr){2-10}
+Sample & Baseline & T + No Quiz  & Baseline & Baseline & Baseline & Baseline & Baseline & Baseline & Baseline \\
+ \midrule 
+AI Treatment $\times$ Post&   0.0847** &   0.1125***&   0.0176** & 227.7855*  & 178.2037*  &   0.0838** &   0.0845** &   0.0001   &   0.0000   \\
+                & (0.0418)   & (0.0432)   & (0.0088)   &(126.1053)   &(91.8784)   & (0.0421)   & (0.0418)   & (0.0005)   & (0.0002)   \\
+AI Treatment    &            &            &   0.0121   &            &            &            &            &            &            \\
+                &            &            & (0.0268)   &            &            &            &            &            &            \\
+& & & & & & & & &  \\
+Sample mean&      4.653 &      4.017 &      0.001 &  5,699.834 &  4,119.070 &      4.699 &      4.653 &     0.0007 &     0.0002  \\
+& (5.493) & (5.169) & (0.031) & (9,927.587) & (8,816.244) & (5.530) & (5.493) & (0.0549) & (0.0134)  \\
+& & & & & & & & &  \\
+Individual FE & Yes & Yes & No & Yes & Yes & Yes & Yes & Yes & Yes\\
+Date FE & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes \\
+Time Since FE & No & No & No & No & No & No & Yes & No & No \\
+ \midrule
+Observations &    155,142 &    142,470 &    155,142 &    112,104 &    155,142 &    113,373 &    155,142 &    155,090 &    155,142  \\
+R-squared&      0.777 &      0.779 &          . &      0.468 &      0.504 &      0.780 &      0.777 &      0.039 &      0.039  \\
+ \midrule
+ \bottomrule
+ \end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{1\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors are clustered at the individual level. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is the number of daily visits by the SZ reader in columns (1)-(3), (6)-(7) and time spent in columns (4)-(5). The analysis period is 21 days before the intervention to 5 days post-intervention in all columns except where we use a 14-day pre-intervention window. AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise. Post is equal to 1 if the day is after the date the individual took the quiz. Column (1) replicates the baseline result in Table \ref{tab:results_visits_baseline}, Column (2) uses an alternative control group while column (3) uses a Poisson model. Columns (4) and (5) uses time spent as an alternative dependent variable (with the caveats about censoring and other measurement issues). Column (7) uses time since quiz fixed effects in addition. Columns (8) and (9) look at engagement with other surveys by individuals in our sample on the news website with the number of clicks on survey links in Column (8) and the probability of any click in Column (9) as the dependent variable.}
+ \end{minipage}
+ \end{table}

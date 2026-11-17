@@ -1,0 +1,33 @@
+ \begin{table} [H]
+ \centering 
+ \caption{Post-intervention Subscription Status} 
+ \label{tab:subscription} 
+ \begin{adjustbox}{max width=\textwidth} 
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{8}{c}}
+\toprule
+ \midrule
+ &\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)} &\multicolumn{1}{c}{(4)}  \\
+\multicolumn{1}{l}{Dep. variable} &\multicolumn{4}{c}{Subscription Status}  \\
+\cmidrule(lr){2-5}
+\multicolumn{1}{c}{Months Post-Intervention} &\multicolumn{1}{c}{2 Months} &\multicolumn{1}{c}{3 Months} &\multicolumn{1}{c}{4 Months} &\multicolumn{1}{c}{5 Months}  \\
+\midrule
+\addlinespace
+AI Treatment    &   0.0042   &   0.0074** &   0.0080** &   0.0119** \\
+                & (0.0027)   & (0.0034)   & (0.0040)   & (0.0047)   \\
+\addlinespace
+Sample mean&      0.989 &      0.982 &      0.975 &      0.965  \\
+& (0.105) & (0.133) & (0.157) & (0.184)  \\
+\midrule
+Observations &      6,158 &       6,158  &      6,158 &      6,158  \\
+R-squared &     0.0004 &      0.0008  &     0.0007 &     0.0010  \\
+F-statistic &      2.436 &       4.783  &      4.057 &      6.423 \\
+\midrule
+\bottomrule
+\end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.88\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Robust standard errors in parantheses. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is whether the SZ reader is still subscribed to SZ on that day. The post intervention time window for analysis varies from  60 days (2 months) post in column (1), 90 days (3 months) post in column (2), 120 days (4 months) post in column (3), and 150 days (5 months) post in column (4). AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise.}
+ \end{minipage}
+ \end{table}

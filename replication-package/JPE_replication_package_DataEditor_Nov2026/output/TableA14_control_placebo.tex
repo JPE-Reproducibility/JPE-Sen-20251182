@@ -1,0 +1,33 @@
+ \begin{table}[H]
+ \centering
+ \caption{Control Group Placebo}
+ \label{tab:C_Placebo}
+ \begin{adjustbox}{max width=\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{lcccc}
+ \toprule
+ & (1) & (2) & (3) & (4) \\
+VARIABLES & Visit Count & Subscription Status & Misinfo Concern & Trust SZ \\
+ \hline
+ & & & & \\
+Hard $\times$ Post&  -0.0510   &            &            &            \\
+                & (0.0588)   &            &            &            \\
+Hard            &            &  -0.0063   &  -0.0148   &  -0.0065   \\
+                &            & (0.0074)   & (0.0173)   & (0.0071)   \\
+Constant        &   4.5822***&   0.9612***&   5.5008***&   2.9109***\\
+                & (0.0256)   & (0.0047)   & (0.0119)   & (0.0047)   \\
+ & & & & \\
+Individual FE & Yes & & & \\
+Date FE & Yes & & & \\
+\midrule
+Observations &   75,608 &    3,005 &    8,654 &    8,582 \\
+R-squared &   0.7741 &   0.0002 &   0.0001 &   0.0001 \\
+ \midrule
+ \bottomrule
+\end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Robust standard errors in parentheses. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is the number of daily visits to SZ in column (1), whether the SZ reader is still subscribed to SZ on that day in column (2), misinformation concern in column (3), and Trust in SZ in column (4). Post is equal to 1 if the day is after the date the individual took the quiz. Column (1) includes individual and date fixed effects; standard errors clustered at the individual level.}
+ \end{minipage}
+ \end{table}

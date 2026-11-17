@@ -1,0 +1,34 @@
+ \begin{table}[H]
+ \centering
+ \caption{Subscription Status: Non-Respondents vs. Treatment}
+ \label{tab:PC_T_subscription}
+ \begin{adjustbox}{max width=\textwidth}
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+ \toprule
+ \midrule
+ &\multicolumn{1}{c}{(1)} &\multicolumn{1}{c}{(2)} &\multicolumn{1}{c}{(3)} &\multicolumn{1}{c}{(4)}  \\
+\multicolumn{1}{l}{Dep. variable} &\multicolumn{4}{c}{Subscription Status}  \\
+\cmidrule(lr){2-5}
+\multicolumn{1}{c}{Months Post-Intervention} &\multicolumn{1}{c}{2 Months} &\multicolumn{1}{c}{3 Months} &\multicolumn{1}{c}{4 Months} &\multicolumn{1}{c}{5 Months}  \\
+ \midrule
+\addlinespace
+AI Treatment (vs. Non-respondent group)&   0.0132*  &   0.0206** &   0.0270** &   0.0237** \\
+                & (0.0079)   & (0.0095)   & (0.0111)   & (0.0120)   \\
+Constant        &   0.9810***&   0.9689***&   0.9556***&   0.9513***\\
+                & (0.0072)   & (0.0091)   & (0.0109)   & (0.0115)   \\
+\addlinespace
+ & & & & \\
+Controls & Yes & Yes & Yes & Yes \\
+\midrule
+Observations &    3,284 &    3,284 &    3,284 &    3,284 \\
+R-squared &   0.0086 &   0.0094 &   0.0070 &   0.0061 \\
+ \hline
+ \bottomrule
+\end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Robust standard errors in parentheses. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is whether the SZ reader is still subscribed to SZ on that day. The post-intervention time window for analysis varies from 2 months post in column (1), 3 months post in column (2), 4 months post in column (3), and 5 months post in column (4). AI Treatment is equal to 1 if individual $i$ was in the AI Treatment group and zero if the individual was in the alternative control group. Controls include reading affinity across politics, crime, music, and sports in the month prior to the experiment.}
+ \end{minipage}
+ \end{table}

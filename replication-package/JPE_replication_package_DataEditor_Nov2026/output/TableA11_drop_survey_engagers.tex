@@ -1,0 +1,31 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Dropping Visits and Individuals Engaging with Other Surveys} 
+ \label{tab:results_visits_drop_post_surveytakers} 
+ \begin{adjustbox}{max width=\textwidth} 
+\begin{tabular}{lcccccccc} 
+ \toprule
+& (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8)  \\
+ Dep. variable & \multicolumn{8}{c}{Number of daily visits} \\ 
+ \cmidrule(lr){2-9} 
+Timespan & (-21;+3) & (-21;+5) & (-21;+10) & (-21;+14) & (-21;+3) & (-21;+5) & (-21;+10) & (-21;+14) \\
+ \midrule 
+AI Treatment $\times$ Post&    0.113** &   0.0848** &   0.0745** &   0.0673*  &    0.116** &   0.0860** &   0.0742** &   0.0664*  \\
+                & (0.0517)   & (0.0418)   & (0.0354)   & (0.0344)   & (0.0517)   & (0.0418)   & (0.0354)   & (0.0344)   \\
+& & & & & & & &  \\
+Sample mean&      4.691 &      4.653 &      4.615 &      4.614 &      4.688 &      4.651 &      4.613 &      4.612  \\
+& (5.534) & (5.493) & (5.458) & (5.463) & (5.534) & (5.493) & (5.457) & (5.462)  \\
+& & & & & & & &  \\
+Individual FE & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes\\
+Date FE & Yes & Yes & Yes & Yes & Yes & Yes & Yes & Yes\\
+ \midrule
+Observations &    143,133 &    155,062 &    184,887 &    208,745 &    142,992 &    154,908 &    184,698 &    208,530  \\
+R-squared&      0.778 &      0.777 &      0.774 &      0.772 &      0.778 &      0.777 &      0.774 &      0.772  \\
+ \bottomrule
+ \end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.99\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors are clustered at the individual level. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is the number of daily visits by the SZ reader. The time window for analysis varies from 21 days prior to the intervention to 3 days post in column (1 and 5), 5 days post in column (2 and 6), 10 days post in column (3 and 7), and 14 days post in column (4 and 8). AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise. Post is equal to 1 if the day is after the date the individual took the quiz. The sample in columns (1)--(4) drops any visit that engages with a survey or a quiz on the SZ website, while in columns (5)--(8), we exclude individuals who clicked on any survey or quiz on the SZ website in the post-experimental period.}
+ \end{minipage}
+ \end{table}

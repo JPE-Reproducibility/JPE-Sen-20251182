@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{Relative Declines in Trust}
+\label{tab:relative_declines}
+\begin{tabular}{lccccc}
+\toprule
+ & ATE & Control mean & \multicolumn{3}{c}{Relative decline (\%)} \\
+\cmidrule(lr){4-6}
+Outlet & $\beta_i$ & $\bar{\tau}_i^C$ & $r_i$ & s.e. & 95\% CI \\
+\midrule
+SZ & -0.019 & 2.908 &  -0.65 & 0.18 & [ -0.99,  -0.30] \\
+ARD/ZDF & -0.023 & 2.800 &  -0.82 & 0.25 & [ -1.31,  -0.34] \\
+Bild & -0.049 & 0.818 &  -5.94 & 1.38 & [ -8.65,  -3.23] \\
+Instagram & -0.047 & 0.763 &  -6.10 & 1.43 & [ -8.91,  -3.30] \\
+TikTok & -0.020 & 0.257 &  -7.72 & 2.83 & [-13.26,  -2.18] \\
+X/Twitter & -0.031 & 0.252 & -12.37 & 2.80 & [-17.85,  -6.88] \\
+\bottomrule
+\end{tabular}
+\par
+\begin{minipage}{\linewidth}
+\baselineskip9pt {\scriptsize \vspace{0.1cm} {\it Notes.} ATEs and robust standard errors are from the regressions of Table A.3. Control means are the means of each trust outcome in the control group (estimation sample of Table A.3). The relative decline is the ATE divided by the control mean. Standard errors are computed by the delta method from the robust standard errors of the ATEs and the sampling variance of the control means, $\operatorname{Var}(\bar{\tau}_i^C)=s_i^2/N_i^C$, using $\operatorname{Cov}(\beta_i,\bar{\tau}_i^C)=-\operatorname{Var}(\bar{\tau}_i^C)$.}
+\end{minipage}
+\end{table}

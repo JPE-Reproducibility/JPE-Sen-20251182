@@ -1,0 +1,35 @@
+ \begin{table}[H]
+ \centering
+ \caption{Heterogeneous Effects: Quiz Difficulty}
+ \label{tab:hard_hetero}
+ {\resizebox{\textwidth}{!}{%
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{6}{c}}
+\toprule
+ & \multicolumn{2}{c}{Misinfo Concern} & \multicolumn{2}{c}{Visits (-21,+5)} & \multicolumn{2}{c}{Subscription (5 months)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+ & Hard & Not Hard & Hard & Not Hard & Hard & Not Hard \\
+\midrule
+\addlinespace
+AI Treatment&   0.3070***&   0.0846***&            &            &   0.0161** &   0.0072   \\
+          & (0.0143)   & (0.0182)   &            &            & (0.0069)   & (0.0073)   \\
+AI Treatment $\times$ Post&            &            &   0.1213** &   0.0221   &            &            \\
+          &            &            & (0.0604)   & (0.0626)   &            &            \\
+\addlinespace
+Sample mean &      5.668 &      5.533 &      4.717 &      4.665 &      0.964 &      0.964 \\
+ & (0.648) & (0.803) & (5.485) & (5.563) & (0.185) & (0.187) \\
+\midrule
+Individual FE & No & No & Yes & Yes & No & No \\
+Date FE & No & No & Yes & Yes & No & No \\
+\midrule
+Observations &      9,318 &      7,859 &     81,770 &     66,898 &      3,258 &      2,655 \\
+R-squared &     0.0541 &     0.0026 &     0.7729 &     0.7836 &     0.0018 &     0.0003 \\
+\bottomrule
+\end{tabular}
+ }}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Significance at the 10\% level represented by *, at the 5\% level by **, and at the 1\% level by ***. Hard = 1 if the individual provides an above median difficulty rating relative to others in the group they are in. Columns (1), (2), (5), and (6) have robust standard errors in parentheses, while columns (3) and (4) have standard errors clustered at the individual level. The dependent variable in columns (1) and (2) is the concern for misinformation, daily visits to SZ (with a window [-21, 5] days) in columns (3) and (4), and subscription retention after 5 months in columns (5) and (6) for an individual SZ reader. The coefficient of interest is AI Treatment $\times$ Post in columns (3) and (4) while it is AI Treatment in columns (1), (2), (5), and (6).}
+ \end{minipage}
+ \end{table}

@@ -1,0 +1,29 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Survey Robustness: Controls} 
+ \label{tab:resultssurvey_controls} 
+ \begin{adjustbox}{max width=\textwidth} 
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{lccc} 
+ \toprule
+& (1) & (2) & (3)  \\
+ Dep. variable & Misinfo Concern & Trust SZ & WTP \\ 
+ \midrule 
+AI Treatment    &    0.224***&   -0.020***&   -0.089   \\
+                &  (0.011)   &  (0.005)   &  (0.177)   \\
+& & &  \\
+Sample mean&      5.605 &      2.898 &     21.002  \\
+& (0.729) & (0.334) & (11.057)  \\
+Controls& Yes & Yes & Yes  \\
+ \midrule
+Observations &     17,284 &     17,113 &     14,461  \\
+R-squared&      0.040 &      0.032 &      0.078  \\
+F-statistic &     87.205 &     36.155 &    189.204  \\
+ \bottomrule
+ \end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.99\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Robust standard errors in parentheses. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is misinformation concern in column (1), Trust in SZ in column (2), and WTP for SZ in column (3). AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise. Controls include whether the individual is female, a subscriber, has consented to tracking, took the quiz in early March, is under 50 years old, or is between 60 and 80 years old.}
+ \end{minipage}
+ \end{table}

@@ -1,0 +1,32 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Post-Intervention Engagement: Traffic Sources} 
+ \label{tab:results_visits_social} 
+ \begin{adjustbox}{max width=\textwidth} 
+\begin{tabular}{lccc} 
+ \toprule
+& (1) & (2) & (3)  \\
+ Dep. variable & \multicolumn{3}{c}{Number of daily visits} \\ 
+ \cmidrule(lr){2-4} 
+Source & Overall & Organic & Social \\
+ \midrule 
+AI Treatment $\times$ Post&   0.0847** &   0.0847** &  -0.0001   \\
+                & (0.0418)   & (0.0418)   & (0.0003)   \\
+& & &  \\
+Sample mean&      4.653 &      4.653 &      0.001  \\
+& (5.493) & (5.493) & (0.031)  \\
+& & &  \\
+Individual FE & Yes & Yes & Yes\\
+Date FE & Yes & Yes & Yes \\
+ \midrule
+Observations &    155,142 &    155,116 &    155,116  \\
+R-squared&      0.768 &      0.768 &      0.037  \\
+F-statistic &      6.224 &      6.274 &      0.331  \\
+ \bottomrule
+ \end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.75\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors are clustered at the individual level. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is the number of daily visits by the SZ reader by source. Column (1) has total traffic, column (2) has organic traffic (non-social media sources), and column (3) has social media traffic to the website and app.  AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise. Post is equal to 1 if the day is after the date the individual took the quiz.}
+ \end{minipage}
+ \end{table}

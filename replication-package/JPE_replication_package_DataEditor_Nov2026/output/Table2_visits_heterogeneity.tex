@@ -1,0 +1,34 @@
+ \begin{table}[H]
+ \centering
+ \caption{Post-Intervention Visits: Heterogeneity by Politics Affinity and Reading Intensity}
+ \label{tab:visits_hetero_new}
+ {\resizebox{\textwidth}{!}{%
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\toprule
+ & (1) & (2) & (3) & (4) \\
+\multicolumn{1}{l}{Dep. variable} & \multicolumn{4}{c}{Number of daily visits} \\
+\cmidrule(lr){2-5}
+\multicolumn{1}{c}{Subgroup} & Low Politics & High Politics & Light Reader & Heavy Reader \\
+\midrule
+\addlinespace
+AI Treatment $\times$ Post&   0.1385** &   0.0522   &   0.0003   &   0.2584** \\
+                & (0.0618)   & (0.0603)   & (0.0365)   & (0.1264)   \\
+\addlinespace
+Sample mean &      4.030 &      5.514 &      0.347 &     11.480 \\
+ & (5.103) & (5.760) & (0.863) & (5.988) \\
+& & & & \\
+Individual FE & Yes & Yes & Yes & Yes \\
+Date FE & Yes & Yes & Yes & Yes \\
+\midrule
+Obs &     63,778 &     84,838 &     38,584 &     38,532 \\
+Adjusted-R$^2$ &     0.7738 &     0.7627 &     0.1512 &     0.5760 \\
+F statistic &      2.914 &      5.441 &      0.075 &      2.459 \\
+\bottomrule
+\end{tabular}
+ }}
+ \par
+ \begin{minipage}{0.98\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors clustered at the individual level. Significance: * 10\%, ** 5\%, *** 1\%. Dependent variable: number of daily visits. Window: 21 days pre- to 5 days post-intervention (excluding day 0). Cols (1)--(2): politics affinity split. Cols (3)--(4): pre-experiment visit intensity (light: $<$20 visits; heavy: $>$145 visits in the 3 pre-experiment weeks).}
+ \end{minipage}
+ \end{table}

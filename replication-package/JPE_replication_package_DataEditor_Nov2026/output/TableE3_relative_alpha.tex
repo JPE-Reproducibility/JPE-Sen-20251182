@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{Calibrated Trustworthiness Relative to X/Twitter ($\alpha_i/\alpha$)}
+\label{tab:relative_alpha}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Multiplicative (App.\ D.1)} & \multicolumn{2}{c}{Additive (Sec.\ 3.3)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+Outlet & Estimate & 95\% interval & Estimate & 95\% interval \\
+\midrule
+SZ & 0.049 & [0.021, 0.108] & 0.0045 & [0.0020, 0.0094] \\
+ARD/ZDF & 0.063 & [0.023, 0.140] & 0.0060 & [0.0023, 0.0127] \\
+Bild & 0.464 & [0.239, 0.903] & 0.148 & [0.080, 0.272] \\
+Instagram & 0.477 & [0.256, 0.897] & 0.163 & [0.091, 0.289] \\
+TikTok & 0.609 & [0.177, 1.188] & 0.612 & [0.187, 1.120] \\
+X/Twitter & 1 & -- & 1 & -- \\
+\bottomrule
+\end{tabular}
+\par
+\begin{minipage}{\linewidth}
+\baselineskip9pt {\scriptsize \vspace{0.1cm} {\it Notes.} Point estimates are plug-in values based on the ATEs and control-group means from the stacked regression underlying Table E.2. Intervals are the 2.5th and 97.5th percentiles of 200,000 Monte Carlo draws (seed 1, Stata/Mata) from the joint normal distribution of the ATEs and control means, using the covariance matrix from that regression, with standard errors clustered by respondent.}
+\end{minipage}
+\end{table}

@@ -1,0 +1,32 @@
+ \begin{table}[H]
+ \centering 
+ \caption{Differences-in-Differences Robustness} 
+ \label{tab:TableA10_did_robustness} 
+ \begin{adjustbox}{max width=\textwidth} 
+\begin{tabular}{lcccc} 
+ \toprule
+& (1) & (2) & (3) & (4)  \\
+ Dep. variable & \multicolumn{4}{c}{Number of daily visits} \\ 
+ \cmidrule(lr){2-5} 
+Timespan & (-21;+3) & (-21;+5) & (-21;+10) & (-21;+14) \\
+ \midrule 
+AI Treatment $\times$ Post&    0.141***&    0.104** &    0.086** &    0.077** \\
+                &  (0.050)   &  (0.041)   &  (0.035)   &  (0.034)   \\
+& & & &  \\
+Sample mean&      4.690 &      4.653 &      4.615 &      4.614  \\
+& (5.534) & (5.493) & (5.457) & (5.463)  \\
+& & & &  \\
+Individual FE & Yes & Yes & Yes  & Yes\\
+Date FE & Yes & Yes & Yes & Yes\\
+ \midrule
+Obs &    143,208 &    155,142 &    184,977 &    208,845  \\
+Adjusted-R$^2$ &      0.768 &      0.768 &      0.766 &      0.765  \\
+F statistic &      8.102 &      6.515 &      6.148 &      5.232  \\
+ \bottomrule
+ \end{tabular}
+ \end{adjustbox}
+ \par
+ \begin{minipage}{0.82\linewidth}
+ \baselineskip9pt {\scriptsize \vspace{0.1cm} { \it Notes.} Standard errors are clustered at the individual level. Significance at the 10\% level is represented by *, at the 5\% by **, and at the 1\% by ***. The dependent variable is the number of daily visits by the SZ reader. The time window for analysis varies from 21 days prior to the intervention to 3 days post in column (1), 5 days post in column (2), 10 days post in column (3), and 14 days post in column (4). We do not control for the Post variable. AI Treatment is equal to 1 if individual $i$ was in the treated group and zero otherwise.}
+ \end{minipage}
+ \end{table}
